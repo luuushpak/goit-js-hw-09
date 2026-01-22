@@ -82,12 +82,8 @@ const galleryMarkup = images
   })
   .join('');
 
-const galleryEl = document.createElement('ul');
-galleryEl.classList.add('gallery');
+const galleryEl = document.querySelector('.gallery');
 galleryEl.insertAdjacentHTML('beforeend', galleryMarkup);
-
-const boxEl = document.querySelector('.container');
-boxEl.insertAdjacentElement('beforeend', galleryEl);
 
 const optionsSimpleLightbox = {
   captionsData: 'alt',
