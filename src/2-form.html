@@ -11,9 +11,22 @@
     <main>
       <div class="container">
         <a class="back-link" href="./index.html">Go back</a>
-        <p>Form</p>
+        <h1 class="form-title">Form</h1>
+        <form class="feedback-form" autocomplete="off">
+          <div>
+            <label>
+              Email
+              <input type="email" name="email" autofocus />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="8"></textarea>
+            </label>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </main>
-    <script src="./js/2-form.js"></script>
+    <script type="module" src="./js/2-form.js"></script>
   </body>
 </html>
